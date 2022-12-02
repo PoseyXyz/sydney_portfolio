@@ -18,6 +18,41 @@ a {
 * {
   box-sizing: border-box;
 }
+.overlay{
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+*{
+  border: none;
+}
+
+@keyframes scaleIn{
+  from{
+    transform: scale(1.2);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+
+.hero-link{
+  @apply text-white hover:text-black text-xs dark:hover:text-white font-bold relative inline-block before:absolute before:h-[3px] before:rounded-lg before:w-2/4  before:-bottom-1 before:bg-black dark:before:bg-white before:block hover:before:w-full before:duration-300 lg:text-lg before:delay-75;
+  content: "";
+}
+
+.card-image img{
+  border-radius: 1.5rem;
+}
+.project-card{
+  background: #10101A;
+  color: white;
+}
+.rotor{
+  transform: rotate(-90deg) translateX(-90%) translateY(-450%);
+}
+.language-tag{
+  @apply border rounded-lg text-sm bg-white p-2 text-black
+}
 /* 
 @media (prefers-color-scheme: dark) {
   html {
