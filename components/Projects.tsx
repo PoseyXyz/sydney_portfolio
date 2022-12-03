@@ -37,7 +37,7 @@ function Projects() {
     }, [translateVal])
     return (
 
-        <section className='bg-blacktext-white flex flex-col overflow-hidden relative gap-16 px-24 bg-[#0A192F] bg-[#E7E7E0] py-[10vh]'>
+        <section className='flex flex-col overflow-hidden relative gap-16 bg-[#0A192F] bg-[#E7E7E0] py-[10vh]'>
             <h2 id='card' className='font-semibold mb-10 text-[6vw] lg:text-[3vw] text-center text-[#9BA6C4]'>Recent projects</h2>
 
             {/* <button className='bg-red-500'>
