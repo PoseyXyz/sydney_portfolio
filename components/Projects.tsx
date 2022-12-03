@@ -37,8 +37,8 @@ function Projects() {
     }, [translateVal])
     return (
 
-        <section className='bg-blacktext-white flex flex-col overflow-hidden relative gap-16 px-24 bg-[#E7E7E0] py-[10vh]'>
-                            <h2 id='card' className='font-semibold mb-10 text-[6vw] lg:text-[2vw] text-center'>Recent projects</h2>
+        <section className='bg-blacktext-white flex flex-col overflow-hidden relative gap-16 px-24 bg-[#0A192F] bg-[#E7E7E0] py-[10vh]'>
+            <h2 id='card' className='font-semibold mb-10 text-[6vw] lg:text-[3vw] text-center text-[#9BA6C4]'>Recent projects</h2>
 
             {/* <button className='bg-red-500'>
                 Hello
@@ -46,9 +46,9 @@ function Projects() {
             {/* <button className={`${translateVal === 0 ? 'visible' : 'visible'} text-7xl font-extrabold previous-arrow-btn cursor-pointer animate-pulse`} disabled={translateVal === 0 ? true : false} onClick={() => moveSlideTrack('previous')}>
             {`<`}
             // </button> */}
-   
-            <div className='container'>
-                <article className="flex flex-col container items-center gap-8" ref={slideTrack}>
+
+            <div className='container max-w-6xl'>
+                <article className="grid grid-cols-3 flex-col container items-center gap-4" ref={slideTrack}>
                     {
                         projects.map((project, index) => {
                             // const { id, name, description, languagesUsed, liveLink, repoLink, className } = project
@@ -56,14 +56,13 @@ function Projects() {
                                 <ProjectCard
                                     key={index}
                                     project={project}
-                                    refProp={index+1===translateVal ? currentVer : nonVal}
-                                    />
+                                />
                             )
                         })
                     }
                 </article>
             </div>
-          
+
         </section>
         // <section id='projects' className='bg-[#f9f9f9] py-[10vh]'>
         //     <div className='flex flex-col items-center justify-center'>
