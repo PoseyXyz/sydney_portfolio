@@ -36,7 +36,7 @@ a {
 }
 
 .hero-link{
-  @apply text-white hover:text-red-500 hover:before:bg-red-500 text-xs items-center gap-2 dark:hover:text-white font-bold relative inline-flex before:absolute before:h-[3px] before:rounded-lg before:w-2/4  before:-bottom-1 before:bg-white dark:before:bg-white before:block hover:before:w-full before:duration-500 lg:text-lg before:delay-75;
+  @apply text-black hover:text-red-500 hover:before:bg-red-500 text-xs items-center gap-2 dark:hover:text-white font-bold relative inline-flex before:absolute before:h-[3px] before:rounded-lg before:w-2/4  before:-bottom-1 before:bg-black dark:before:bg-white before:block hover:before:w-full before:duration-500 lg:text-lg before:delay-75;
   content: "";
 }
 
@@ -52,6 +52,14 @@ a {
 }
 .language-tag{
   @apply border rounded-lg text-sm bg-white p-2 text-black
+}
+
+.btn-flip{
+  @apply gap-2 items-center text-xl inline-flex
+}
+
+.footer{
+  border-top: 1px solid gray;
 }
 /* 
 @media (prefers-color-scheme: dark) {

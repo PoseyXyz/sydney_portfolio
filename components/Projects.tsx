@@ -37,8 +37,7 @@ function Projects() {
     }, [translateVal])
     return (
 
-        <section className='flex flex-col overflow-hidden relative gap-16 bg-[#0A192F] bg-[#E7E7E0] py-[10vh]'>
-            <h2 id='card' className='font-semibold mb-10 text-[6vw] lg:text-[3vw] text-center text-[#9BA6C4]'>Recent projects</h2>
+        <section className='flex flex-col overflow-hidden relative gap- bg-[#0A192F] py-[10vh]'>
 
             {/* <button className='bg-red-500'>
                 Hello
@@ -48,6 +47,8 @@ function Projects() {
             // </button> */}
 
             <div className='container max-w-6xl'>
+            <h2 id='card' className='font-semibold mt-10 mb-16 text-[6vw] lg:text-[3vw] text-[#9BA6C4]'>Recent projects</h2>
+
                 <article className="grid grid-cols-3 flex-col container items-center gap-4" ref={slideTrack}>
                     {
                         projects.map((project, index) => {
