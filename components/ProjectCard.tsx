@@ -3,9 +3,13 @@ import Link from 'next/link';
 import React from 'react';
 import { FaEye, FaCodeBranch } from 'react-icons/fa'
 import { AiOutlineFolder } from 'react-icons/ai'
+import { projectListInterface } from '../inferfaces/interfaces';
 
+type Props = {
+    project:projectListInterface
+}
 
-function ProjectCard({ project }) {
+function ProjectCard({ project }:Props) {
 
     return (
         // <section className='max-w-4xl p-12 project-card rounded-3xl'>
@@ -67,7 +71,7 @@ function ProjectCard({ project }) {
                 <h3 className='font-bold text-[#9BA6C4] duration-200 group-hover:text-[#62F9D6] text-lg'>Integrating Algolia Search with WordPress Multisite</h3>
                 <p className='text-[#9BA6C4]'>Building a custom multisite compatible WordPress plugin to build global search with Algolia</p>
 
-                <div className='inline-flex text-sm border mt-4 col-span-1 clear-both border-white gap-4' c>
+                <div className='inline-flex text-sm border mt-4 col-span-1 clear-both border-white gap-4'>
                     <span className='text-[#9BA6C4]'>Python</span>
                     <span className='text-[#9BA6C4]'>MySQl</span>
                     <span className='text-[#9BA6C4]'>TailwindCSS</span>

@@ -20,7 +20,7 @@ function About() {
                 </div>
                 <div className='flex flex-col gap-5 pt-[8vh] pb-[8vh]'>
                     <h3 className="font-bold text-[5vw] lg:text-[2.5vw]">
-                        Wondering what's next?
+                        {`Wondering what's next?`}
                     </h3>
                     <p className='font-semibold'>Get In Touch</p>
 
