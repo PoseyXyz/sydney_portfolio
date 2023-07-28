@@ -1,6 +1,11 @@
 import { Configuration, OpenAIApi } from "openai";
 import { useState } from "react";
 
+interface gptResponses {
+    name:string,
+    languages_used:string,
+    deszcription:string
+}
 
 export default function Home() {
     const [loading, setLoading] = useState(true)
